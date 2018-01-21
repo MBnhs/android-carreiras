@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Carreiras</string>
+    <string name="evt_value">Eventos</string>
+    <string name="eng_value">Engenharia</string>
+</resources>
