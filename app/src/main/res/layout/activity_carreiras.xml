@@ -28,7 +28,14 @@
         app:layout_constraintVertical_bias="0.0"
         android:src="@mipmap/logo" />
 
-    <ImageView
+    <!--<ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />-->
+
+    <!--<ImageView
         android:id="@+id/imageFundo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -87,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="@+id/spinner"
         app:layout_constraintTop_toTopOf="@+id/spinner"
         app:srcCompat="@mipmap/arrow" />
-
+-->
     <Button
         android:id="@+id/buttonEventos"
         android:layout_width="wrap_content"
@@ -118,10 +125,19 @@
         android:id="@+id/listaCultura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/item_cultura"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageFundo"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listaCultura"
         />
 
 </android.support.constraint.ConstraintLayout>

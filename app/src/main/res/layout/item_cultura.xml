@@ -8,7 +8,7 @@
         android:id="@+id/imageCultura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/criatividade"
+        
         android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +34,7 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Estimulamos  a intervenção humana como algo
-insubstituível. Nosso ambiente é inspirador"
+
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@id/imageCultura"
         app:layout_constraintStart_toStartOf="@id/imageCultura"
