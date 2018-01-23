@@ -16,6 +16,7 @@ public class CulturaDAO {
                 new Cultura(0, "criatividade", "Criatividade", "Estimulamos a intervenção humana como algo insubstituível. Nosso ambiente é inspirador"),
         new Cultura(0, "colaboracao", "Colaboração", "Valorizamos o trabalho em equipe e as habilidades individuais. Incentivamos o empreendedorismo e formamos um time fora de série"),
                 new Cultura(0, "tec_ino", "Tecnologia e Inovação", "Utilizamos a tecnologia para melhorar continuamente nosso negócio. Transformamos e conectamos pessoas")
+
         );
     }
 

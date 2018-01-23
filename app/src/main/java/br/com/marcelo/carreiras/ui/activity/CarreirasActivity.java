@@ -3,14 +3,18 @@ package br.com.marcelo.carreiras.ui.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import br.com.marcelo.carreiras.R;
+import br.com.marcelo.carreiras.dao.AreaAtuacaoDAO;
 import br.com.marcelo.carreiras.dao.CulturaDAO;
+import br.com.marcelo.carreiras.ui.adapter.GridAreaAtuacaoAdapter;
 import br.com.marcelo.carreiras.ui.adapter.ListaCulturaAdapter;
+import br.com.marcelo.carreiras.ui.utils.UIUtils;
 
 public class CarreirasActivity extends AppCompatActivity {
 
@@ -27,5 +31,12 @@ public class CarreirasActivity extends AppCompatActivity {
 
         ListView listaCultura = findViewById(R.id.listaCultura);
         listaCultura.setAdapter(new ListaCulturaAdapter(new CulturaDAO().lista(), this));
+        UIUtils.setListViewHeightBasedOnItems(listaCultura);
+
+
+        GridView gridAreaAtuacao = findViewById(R.id.gridAreaAtuacao);
+        gridAreaAtuacao.setAdapter(new GridAreaAtuacaoAdapter(new AreaAtuacaoDAO().lista(),this));
+        UIUtils.setGridViewHeightBasedOnItems(gridAreaAtuacao);
+
     }
 }

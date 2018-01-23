@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="br.com.marcelo.carreiras.ui.activity.CarreirasActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorBanner" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@color/colorBanner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:src="@mipmap/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:src="@mipmap/logo" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!--<ScrollView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />-->
-
-    <!--<ImageView
+    <ImageView
         android:id="@+id/imageFundo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -94,7 +92,6 @@
         app:layout_constraintEnd_toEndOf="@+id/spinner"
         app:layout_constraintTop_toTopOf="@+id/spinner"
         app:srcCompat="@mipmap/arrow" />
--->
     <Button
         android:id="@+id/buttonEventos"
         android:layout_width="wrap_content"
@@ -121,23 +118,43 @@
         app:layout_constraintEnd_toStartOf="@id/buttonEventos"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/listaCultura"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        <ListView
+            android:id="@+id/listaCultura"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageFundo"
+            tools:listitem="@layout/item_cultura" />
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageLogo"
-        />
+        <GridView
+            android:id="@+id/gridAreaAtuacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:paddingTop="40dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:verticalSpacing="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listaCultura"
+            tools:listitem="@layout/item_area_atuacao" />
 
-    <GridView
-        android:id="@+id/grid"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/listaCultura"
-        />
-
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/textAreas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Conheça nossas áreas"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gridAreaAtuacao" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

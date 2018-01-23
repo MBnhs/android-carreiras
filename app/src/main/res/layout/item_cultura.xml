@@ -8,7 +8,7 @@
         android:id="@+id/imageCultura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
+
         android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,6 @@
         android:id="@+id/textTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Criatividade"
         android:textAllCaps="true"
         android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="@id/imageCultura"
@@ -34,7 +33,6 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@id/imageCultura"
         app:layout_constraintStart_toStartOf="@id/imageCultura"
