@@ -14,30 +14,30 @@ import java.util.List;
 
 import br.com.marcelo.carreiras.R;
 import br.com.marcelo.carreiras.model.AreaAtuacao;
-import br.com.marcelo.carreiras.model.Cultura;
+import br.com.marcelo.carreiras.model.RedeSocial;
 
 /**
  * Created by Marcelo on 22/01/2018.
  */
 
-public class GridAreaAtuacaoAdapter extends BaseAdapter {
+public class GridRodapeAdapter extends BaseAdapter {
 
-    private List<AreaAtuacao> areasAtuacao;
+    private List<RedeSocial> redesSociais;
     private Context context;
 
-    public GridAreaAtuacaoAdapter(List<AreaAtuacao> areasAtuacao, Context context) {
-        this.areasAtuacao = areasAtuacao;
+    public GridRodapeAdapter(List<RedeSocial> redesSociais, Context context) {
+        this.redesSociais = redesSociais;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return areasAtuacao.size();
+        return redesSociais.size();
     }
 
     @Override
-    public AreaAtuacao getItem(int posicao) {
-        return areasAtuacao.get(posicao);
+    public RedeSocial getItem(int posicao) {
+        return redesSociais.get(posicao);
     }
 
     @Override
@@ -47,20 +47,17 @@ public class GridAreaAtuacaoAdapter extends BaseAdapter {
 
     @Override
     public View getView(int posicao, View view, ViewGroup viewGroup) {
-        View viewAreaAtuacao = LayoutInflater.from(context).inflate(R.layout.item_area_atuacao, viewGroup, false);
-        AreaAtuacao areaAtuacao = areasAtuacao.get(posicao);
+        View viewRedeSocial = LayoutInflater.from(context).inflate(R.layout.item_rede_social, viewGroup, false);
+        RedeSocial redeSocial = redesSociais.get(posicao);
 
-        TextView nome = viewAreaAtuacao.findViewById(R.id.textNome);
-        nome.setText(areaAtuacao.getNome());
-
-        if (areaAtuacao.getIcone()!= null) {
-            ImageView icone = viewAreaAtuacao.findViewById(R.id.imageArea);
+        if (redeSocial.getIcone()!= null) {
+            ImageView icone = viewRedeSocial.findViewById(R.id.imageArea);
             Resources resources = context.getResources();
-            int id = resources.getIdentifier(areaAtuacao.getIcone(), "mipmap", context.getPackageName());
+            int id = resources.getIdentifier(redeSocial.getIcone(), "mipmap", context.getPackageName());
             Drawable drawable = resources.getDrawable(id);
             icone.setImageDrawable(drawable);
         }
 
-        return viewAreaAtuacao;
+        return viewRedeSocial;
     }
 }

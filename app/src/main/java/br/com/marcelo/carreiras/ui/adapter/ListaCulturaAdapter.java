@@ -34,7 +34,7 @@ public class ListaCulturaAdapter extends BaseAdapter{
     }
 
     @Override
-    public Object getItem(int posicao) {
+    public Cultura getItem(int posicao) {
         return listaCultura.get(posicao);
     }
 

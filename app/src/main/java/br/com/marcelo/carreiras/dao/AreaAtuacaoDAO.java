@@ -13,14 +13,14 @@ import br.com.marcelo.carreiras.model.Cultura;
 public class AreaAtuacaoDAO {
 
     public List<AreaAtuacao> lista() {
-        return Arrays.asList(new AreaAtuacao("ic_engenharia", "Engenharia"),
-                new AreaAtuacao("ic_atendimento", "Atendimento"),
-                new AreaAtuacao("ic_comunicacao_mkt", "Comunicação & Marketing"),
-                new AreaAtuacao("ic_desenvolvimento_vendedores", "Desenvolvimento de Vendedores"),
-                new AreaAtuacao("ic_design", "Design"),
-                new AreaAtuacao("ic_produto", "Produto"),
-                new AreaAtuacao("ic_trustnsafety", "Trust & Safety"),
-                new AreaAtuacao("ic_adm_financeiro", "Administrativo/Financeiro")
+        return Arrays.asList(new AreaAtuacao("ic_engenharia", "Engenharia", "www.google.com"),
+                new AreaAtuacao("ic_atendimento", "Atendimento", "www.google.com"),
+                new AreaAtuacao("ic_comunicacao_mkt", "Comunicação & Marketing", "www.google.com"),
+                new AreaAtuacao("ic_desenvolvimento_vendedores", "Desenvolvimento de Vendedores", "www.google.com"),
+                new AreaAtuacao("ic_design", "Design", "www.google.com"),
+                new AreaAtuacao("ic_produto", "Produto", "www.google.com"),
+                new AreaAtuacao("ic_trustnsafety", "Trust & Safety", "www.google.com"),
+                new AreaAtuacao("ic_adm_financeiro", "Administrativo/Financeiro", "www.google.com")
         );
 
     }

@@ -135,7 +135,8 @@
             android:horizontalSpacing="10dp"
             android:numColumns="2"
             android:stretchMode="columnWidth"
-            android:paddingTop="40dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="10dp"
             android:paddingRight="8dp"
             android:paddingLeft="8dp"
             android:verticalSpacing="8dp"
@@ -156,5 +157,36 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/gridAreaAtuacao" />
+
+        <GridView
+            android:id="@+id/gridRodape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:horizontalSpacing="10dp"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:paddingTop="50dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:verticalSpacing="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gridAreaAtuacao"
+            tools:listitem="@layout/item_rede_social" />
+
+        <TextView
+            android:id="@+id/textRodape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Conecte-se com a gente"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gridRodape" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
