@@ -13,13 +13,13 @@ import br.com.marcelo.carreiras.model.RedeSocial;
 public class RedeSocialDAO {
 
     public List<RedeSocial> lista() {
-        return Arrays.asList(new RedeSocial("facebook"),
-                             new RedeSocial("instagram"),
-                             new RedeSocial("googleplus"),
-                             new RedeSocial("pinterest_light"),
-                             new RedeSocial("twitter"),
-                             new RedeSocial("linkedin"),
-                             new RedeSocial("blog"));
+        return Arrays.asList(new RedeSocial("facebook", "https://m.facebook.com/Elo7br/"),
+                             new RedeSocial("instagram", "https://www.instagram.com/elo7br/"),
+                             new RedeSocial("googleplus", "https://plus.google.com/+Elo7Br"),
+                             new RedeSocial("pinterest_light", "https://br.pinterest.com/elo7br/"),
+                             new RedeSocial("twitter", "https://mobile.twitter.com/elo7"),
+                             new RedeSocial("linkedin", "https://br.linkedin.com/company/elo7"),
+                             new RedeSocial("blog", "https://blog.elo7.com.br/"));
     }
 
 }

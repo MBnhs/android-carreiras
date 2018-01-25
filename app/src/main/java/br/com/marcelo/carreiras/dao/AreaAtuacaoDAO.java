@@ -13,14 +13,14 @@ import br.com.marcelo.carreiras.model.Cultura;
 public class AreaAtuacaoDAO {
 
     public List<AreaAtuacao> lista() {
-        return Arrays.asList(new AreaAtuacao("ic_engenharia", "Engenharia", "www.google.com"),
-                new AreaAtuacao("ic_atendimento", "Atendimento", "www.google.com"),
-                new AreaAtuacao("ic_comunicacao_mkt", "Comunicação & Marketing", "www.google.com"),
-                new AreaAtuacao("ic_desenvolvimento_vendedores", "Desenvolvimento de Vendedores", "www.google.com"),
-                new AreaAtuacao("ic_design", "Design", "www.google.com"),
-                new AreaAtuacao("ic_produto", "Produto", "www.google.com"),
-                new AreaAtuacao("ic_trustnsafety", "Trust & Safety", "www.google.com"),
-                new AreaAtuacao("ic_adm_financeiro", "Administrativo/Financeiro", "www.google.com")
+        return Arrays.asList(new AreaAtuacao("ic_engenharia", "Engenharia", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/engenharia/"),
+                new AreaAtuacao("ic_atendimento", "Atendimento", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/atendimento/"),
+                new AreaAtuacao("ic_comunicacao_mkt", "Comunicação & Marketing", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/comunicacao-e-marketing/"),
+                new AreaAtuacao("ic_desenvolvimento_vendedores", "Desenvolvimento de Vendedores", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/desenvolvimento-de-vendedores/"),
+                new AreaAtuacao("ic_design", "Design", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/design/"),
+                new AreaAtuacao("ic_produto", "Produto", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/produto/"),
+                new AreaAtuacao("ic_trustnsafety", "Trust & Safety", "http://d9hhrg4mnvzow.cloudfront.net/carreira.elo7.com.br/16b70474-trust-safety.png"),
+                new AreaAtuacao("ic_adm_financeiro", "Administrativo/Financeiro", "http://carreira.elo7.com.br/clkn/http/carreira.elo7.com.br/administrativo-financeiro/")
         );
 
     }

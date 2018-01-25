@@ -16,6 +16,8 @@ import br.com.marcelo.carreiras.R;
 import br.com.marcelo.carreiras.dao.AreaAtuacaoDAO;
 import br.com.marcelo.carreiras.dao.CulturaDAO;
 import br.com.marcelo.carreiras.dao.RedeSocialDAO;
+import br.com.marcelo.carreiras.model.AreaAtuacao;
+import br.com.marcelo.carreiras.model.RedeSocial;
 import br.com.marcelo.carreiras.ui.adapter.GridAreaAtuacaoAdapter;
 import br.com.marcelo.carreiras.ui.adapter.GridRodapeAdapter;
 import br.com.marcelo.carreiras.ui.adapter.ListaCulturaAdapter;
@@ -39,22 +41,33 @@ public class CarreirasActivity extends AppCompatActivity {
         UIUtils.setListViewHeightBasedOnItems(listaCultura);
 
 
-        GridView gridAreaAtuacao = findViewById(R.id.gridAreaAtuacao);
+        final GridView gridAreaAtuacao = findViewById(R.id.gridAreaAtuacao);
         gridAreaAtuacao.setAdapter(new GridAreaAtuacaoAdapter(new AreaAtuacaoDAO().lista(),this));
         UIUtils.setGridViewHeightBasedOnItems(gridAreaAtuacao);
 
         gridAreaAtuacao.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Uri uri = Uri.parse("https://www.google.com");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                AreaAtuacao areaAtuacao = (AreaAtuacao) gridAreaAtuacao.getItemAtPosition(i);
+                Intent intent = new Intent(CarreirasActivity.this, WebViewActivity.class);
+                intent.putExtra("url", areaAtuacao.getLink());
                 startActivity(intent);
             }
         });
 
-        GridView gridRodape = findViewById(R.id.gridRodape);
+        final GridView gridRodape = findViewById(R.id.gridRodape);
         gridRodape.setAdapter(new GridRodapeAdapter(new RedeSocialDAO().lista(),this));
         UIUtils.setGridViewHeightBasedOnItems(gridAreaAtuacao);
+
+        gridRodape.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                RedeSocial redeSocial = (RedeSocial) gridRodape.getItemAtPosition(i);
+                Intent intent = new Intent(CarreirasActivity.this, WebViewActivity.class);
+                intent.putExtra("url", redeSocial.getLink());
+                startActivity(intent);
+            }
+        });
 
     }
 }
