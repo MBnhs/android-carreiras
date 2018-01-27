@@ -12,10 +12,10 @@ import br.com.marcelo.carreiras.model.Cultura;
 public class CulturaDAO {
 
     public List<Cultura> lista() {
-        return Arrays.asList(new Cultura(0, null, "Nossa cultura", "Somos orientados pela satisfação e fidelização de nossos clientes"),
-                new Cultura(0, "criatividade", "Criatividade", "Estimulamos a intervenção humana como algo insubstituível. Nosso ambiente é inspirador"),
-        new Cultura(0, "colaboracao", "Colaboração", "Valorizamos o trabalho em equipe e as habilidades individuais. Incentivamos o empreendedorismo e formamos um time fora de série"),
-                new Cultura(0, "tec_ino", "Tecnologia e Inovação", "Utilizamos a tecnologia para melhorar continuamente nosso negócio. Transformamos e conectamos pessoas")
+        return Arrays.asList(new Cultura(null, "Nossa cultura", "Somos orientados pela satisfação e fidelização de nossos clientes"),
+                new Cultura("criatividade", "Criatividade", "Estimulamos a intervenção humana como algo insubstituível. Nosso ambiente é inspirador"),
+        new Cultura("colaboracao", "Colaboração", "Valorizamos o trabalho em equipe e as habilidades individuais. Incentivamos o empreendedorismo e formamos um time fora de série"),
+                new Cultura("tec_ino", "Tecnologia e Inovação", "Utilizamos a tecnologia para melhorar continuamente nosso negócio. Transformamos e conectamos pessoas")
 
         );
     }

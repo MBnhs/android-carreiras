@@ -9,6 +9,10 @@ public class AreaAtuacao {
     private String nome;
     private String link;
 
+    public AreaAtuacao() {
+
+    }
+
     public AreaAtuacao(String icone, String nome, String link) {
         this.icone = icone;
         this.nome = nome;

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "301008465987",
+    "firebase_url": "https://carreiras-d8f72.firebaseio.com",
+    "project_id": "carreiras-d8f72",
+    "storage_bucket": "carreiras-d8f72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301008465987:android:7961be1d0bfe0a00",
+        "android_client_info": {
+          "package_name": "br.com.marcelo.carreiras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301008465987-mq23vo31219ghismj3qrb1eih6bfj3lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjqmvH2ykaaeQHJf8Fm2gX5XxZ5DJdfGA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,6 +9,10 @@ public class RedeSocial {
     private String icone;
     private String link;
 
+    public RedeSocial() {
+
+    }
+
     public RedeSocial(String icone, String link) {
         this.icone = icone;
         this.link = link;

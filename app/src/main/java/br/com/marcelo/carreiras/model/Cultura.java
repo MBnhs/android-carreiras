@@ -6,24 +6,18 @@ package br.com.marcelo.carreiras.model;
 
 public class Cultura {
 
-    private int ordem;
     private String icone;
     private String titulo;
     private String descricao;
 
-    public Cultura(int ordem, String icone, String titulo, String descricao) {
-        this.ordem = ordem;
+    public Cultura() {
+
+    }
+
+    public Cultura(String icone, String titulo, String descricao) {
         this.icone = icone;
         this.titulo = titulo;
         this.descricao = descricao;
-    }
-
-    public int getOrdem() {
-        return ordem;
-    }
-
-    public void setOrdem(int ordem) {
-        this.ordem = ordem;
     }
 
     public String getIcone() {
